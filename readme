@@ -5,6 +5,11 @@
 A full-stack login application with brute-force protection mechanisms, implementing both user-level and IP-level lockout systems.
 Note: Screenshots (attached)
 
+
+## Accounts
+admin@example.com , admin@1234 (password)
+admin1@example.com, admin@1234(password)
+
 ## Features 
 
 - User authentication with email and password
