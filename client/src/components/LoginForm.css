@@ -1,0 +1,108 @@
+/* client/src/components/LoginForm.css */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #2d2d2d; /* Dark grey background */
+  padding: 20px;
+}
+
+form {
+  background-color: #4a4a4a; /* Medium grey form background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  color: #ffffff; /* White text */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #6b6b6b;
+  border-radius: 4px;
+  background-color: #5c5c5c; /* Slightly lighter grey for input */
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #00aaff; /* Blue highlight for focus */
+  box-shadow: 0 0 5px rgba(0, 170, 255, 0.5);
+}
+
+input.error {
+  border-color: #ff4d4d; /* Red border for errors */
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #00aaff; /* Blue button */
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0088cc;
+}
+
+button:disabled {
+  background-color: #6b6b6b;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.message.success {
+  color: #00cc00; /* Green for success */
+}
+
+.message.error {
+  color: #ff4d4d; /* Red for errors */
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  form {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+}
