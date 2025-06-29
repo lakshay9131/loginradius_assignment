@@ -3,8 +3,10 @@
 
 ## Overview
 A full-stack login application with brute-force protection mechanisms, implementing both user-level and IP-level lockout systems.
+Note: Screenshots (attached)
 
-## Features
+## Features 
+
 - User authentication with email and password
 - User-level lockout: 5 failed attempts in 5 minutes → 15-minute suspension
 - IP-level lockout: 100 failed attempts in 5 minutes → IP blocked
